@@ -1,3 +1,4 @@
+
 /**
  * Main.java
  * Entry Point to Entire Program;
@@ -10,18 +11,16 @@
 import java.util.Scanner;
 
 public class SecretMain {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         AutoPrint printer = new AutoPrint();
-          
-        //automated diamond (fairly hacky)
+
+        // automated diamond (fairly hacky)
         Scanner scanner = new Scanner(System.in);
         try {
             printer.printDiamondAuto(63);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
-        MyFirstProgram.Main(args);
 
         System.out.println("Press Enter key to exit...");
         scanner.nextLine();
