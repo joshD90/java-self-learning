@@ -1,11 +1,10 @@
 package errorHandling;
 
-import java.nio.file.InvalidPathException;
-
 public class CustomErrorHandling {
     static class InvalidInputException extends Exception {
         public InvalidInputException(String message) {
             super(message);
+
         }
     }
 
